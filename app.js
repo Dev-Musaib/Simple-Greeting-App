@@ -23,7 +23,7 @@ function greet(e) {
     newElement.appendChild(greeting)
 
     block.appendChild(newElement)
-    console.log(block);
+
 }
 
 function exit(e) {
@@ -32,7 +32,7 @@ function exit(e) {
     block.style.transform = 'scale(0)'
     cover.classList.remove('active');
     cover.classList.add('cover')
-    console.log(block);
+
 
 
 }
