@@ -69,15 +69,14 @@ input {
 }
 
 .modal {
-    position: absolute;
-    left: 13em;
-    bottom: 8em;
+    position: relative;
+
     transform: scale(0);
     border: 4px black solid;
     width: 50%;
     height: 50vh;
-    background-color: #fff;
     margin: 0px auto;
+    background-color: #fff;
     animation-name: dispe-animation;
     animation-duration: 0.3s;
     transition: all ease-in-out;
@@ -128,4 +127,30 @@ input {
 
 .exitSpan:hover {
     cursor: pointer;
+}
+
+
+@media (max-width: 750px) {
+    .modal {
+        min-width: 90%;
+        height: 40vh;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .modal {
+        max-width: 90%;
+        height: 20vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal {
+        max-width: 40%;
+        margin-bottom: 10em;
+        height: 40vh;
+
+
+    }
 }
