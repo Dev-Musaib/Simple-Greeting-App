@@ -1,156 +1,156 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-
-    z-index: 0;
+  z-index: 0;
 }
 
 .heading {
-    text-align: center;
-    height: 100px;
+  text-align: center;
+  height: 100px;
 
-    background-color: mediumseagreen;
+  background-color: mediumseagreen;
 }
 
 h1 {
-    position: relative;
-    line-height: 100px;
-    font-family: Comfortaa;
-    text-decoration: underline;
-    animation-name: greet-animation;
-    animation-duration: 3s;
-    transition: all ease-in-out;
-    animation-fill-mode: forwards;
+  position: relative;
+  line-height: 100px;
+  font-family: Comfortaa;
+  text-decoration: underline;
+  animation-name: greet-animation;
+  animation-duration: 3s;
+  transition: all ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-
 @keyframes greet-animation {
-    0% {
-        top: -200px;
-    }
+  0% {
+    top: -200px;
+  }
 
-    100% {
-        top: 0px;
-    }
+  100% {
+    top: 0px;
+  }
 }
 
 .header {
-    margin: 2em;
-    text-align: center;
+  margin: 2em;
+  text-align: center;
 }
 
 input {
-    padding: 10px 12px;
-    font-family: Montserrat;
-    border-radius: 1em;
-    border: none;
-    outline: none;
-    background-color: #ccc;
-
+  padding: 10px 12px;
+  font-family: Montserrat;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #eee;
 }
 
 .button {
-    padding: 5px 8px;
-    margin: 10px;
-    background: linear-gradient(to bottom right, cornflowerblue, blue);
-    border: none;
-    border-radius: 0.6em;
-    font-family: Comfortaa;
-    color: #fff;
-    outline: none;
-
+  padding: 5px 8px;
+  margin: 10px;
+  background: linear-gradient(to bottom right, cornflowerblue, blue);
+  border: none;
+  border-radius: 0.6em;
+  font-family: Comfortaa;
+  color: #fff;
+  outline: none;
 }
 
 .button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal {
-    position: relative;
+  position: relative;
 
-    transform: scale(0);
-    border: 4px black solid;
-    width: 50%;
-    height: 50vh;
-    margin: 0px auto;
-    background-color: #fff;
-    animation-name: dispe-animation;
-    animation-duration: 0.3s;
-    transition: all ease-in-out;
-    animation-fill-mode: forwards;
-    background: #fff;
-    transition: all 0.3s ease-in-out;
-    z-index: 10;
+  transform: scale(0);
+  border: 4px black solid;
+  width: 50%;
+  height: 50vh;
+  margin: 0px auto;
+  background-color: #fff;
+  animation-name: dispe-animation;
+  animation-duration: 0.3s;
+  transition: all ease-in-out;
+  animation-fill-mode: forwards;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .modal-header {
-    background: cornflowerblue;
-    padding: 10px 12px;
-    display: flex;
-    justify-content: space-between;
+  background: cornflowerblue;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-title {
-    font-family: Caveat;
-    font-size: 2rem;
+  font-family: Caveat;
+  font-size: 2rem;
 }
 
 .sub-title {
-    text-align: center;
-    margin-top: 50px;
-    color: crimson;
-    z-index: 10;
-    font-family: Sacramento;
-    font-size: 3rem;
-    text-decoration: underline;
+  text-align: center;
+  margin-top: 50px;
+  color: crimson;
+  z-index: 10;
+  font-family: Sacramento;
+  font-size: 3rem;
+  text-decoration: underline;
 }
 
 .cover {
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    pointer-events: none;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
 }
 
-
 .cover.active {
-    opacity: 1;
-    pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .exitSpan:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.errorMessage {
+  font-size: 14px;
+  margin: 8px;
+  font-family: Montserrat;
+  color: red;
+}
 
 @media (max-width: 750px) {
-    .modal {
-        min-width: 90%;
-        height: 40vh;
-    }
-
+  .modal {
+    min-width: 90%;
+    height: 40vh;
+  }
 }
 
 @media (min-width: 800px) {
-    .modal {
-        max-width: 90%;
-        height: 20vh;
-    }
+  .modal {
+    max-width: 60%;
+    height: 35vh;
+  }
 }
 
-@media (min-width: 1200px) {
-    .modal {
-        max-width: 40%;
-        margin-bottom: 10em;
-        height: 40vh;
-
-
-    }
+@media (min-width: 1024px) {
+  .modal {
+    position: relative;
+    top: -2em;
+    max-width: 30%;
+    margin-bottom: 15em;
+    height: 40vh;
+  }
 }
